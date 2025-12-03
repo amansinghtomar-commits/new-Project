@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Inter;
+}
+.eg-hero{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.eg-container{
+    max-width: 1156px;
+    width: 100%;
+} 
+
+.eg-hero .eg-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.eg-hero-banner{
+    width: 100%;
+    height: 552px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+
+.eg-hero-banner .eg-BGImage{
+    align-self: flex-end;
+    height: 100%;
+    width: 50%;
+    background: url(https://i.ibb.co/prMpb26T/82569100e35d1b5107bf748398d6c31fafe0e186.jpg);
+    background-repeat: no-repeat;
+    background-size: 136% 100%;
+    position: absolute;
+}
+
+.eg-hero .eg-overlay{
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+    background: linear-gradient(277.07deg, rgba(67, 58, 96, 0) -3.54%, #433A60 45.88%);
+    position: absolute;
+}
+
+.eg-hero-banner .eg-curve{
+    width: 100%;
+    position: absolute;
+    top: 520px;
+    z-index: 1;
+}
+
+.eg-hero-content{
+    position: absolute;
+    top: 50px;
+    left: 210px;
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    z-index: 1;
+    padding-left: 4%;
+}
+
+.eg-hero-content h1{
+    color: #ffffff;
+    font-size: 36px;
+    text-transform: uppercase;
+    
+}
+
+.eg-hero-content h1 span{
+    font-weight: 100;  
+}
+
+.eg-hero-content p{
+    font-size: 22px;
+    line-height: 30px;
+    color: #ffffff;
+    /* font-weight: 400; */
+}
+
+.eg-hero-content p span{
+    font-weight: 700;
+    
+}
+
+.eg-heroBtn{
+    display: flex;
+    gap: 20px;
+
+}
+
+.eg-heroBtn .eg-btnPrimary{
+    padding: 15px 20px;
+    background-color: #FCC607;
+    border-radius: 2px;
+    border: none;
+    cursor: pointer;
+}
+.eg-heroBtn .eg-btnSecondary{
+    padding: 15px 20px;
+    background: transparent;
+    color: #ffffff;
+    border: 1px solid #ffffff80;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.eg-hero-content .eg-trust{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+

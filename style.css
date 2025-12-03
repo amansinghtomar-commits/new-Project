@@ -8,11 +8,16 @@
 body{
     font-family: Inter;
 }
-.eg-hero{
+.eg-hero,
+.eg-ourAmenities{
     width: 100%;
     display: flex;
     justify-content: center;
     position: relative;
+}
+
+.eg-hero{
+    height: 552px;
 }
 
 .eg-container{
@@ -27,7 +32,7 @@ body{
 
 .eg-hero-banner{
     width: 100%;
-    height: 552px;
+    height: 100%;
     display: flex;
     flex-direction: column;
     position: absolute;
@@ -42,7 +47,9 @@ body{
     width: 50%;
     background: url(https://i.ibb.co/prMpb26T/82569100e35d1b5107bf748398d6c31fafe0e186.jpg);
     background-repeat: no-repeat;
-    background-size: 136% 100%;
+    /* background-size: 136% 100%; */
+    background-size: 144% 108%;
+    background-position: 13% 120%;
     position: absolute;
 }
 
@@ -57,7 +64,7 @@ body{
 .eg-hero-banner .eg-curve{
     width: 100%;
     position: absolute;
-    top: 520px;
+    top: 94%;
     z-index: 1;
 }
 
@@ -65,7 +72,7 @@ body{
     position: absolute;
     top: 50px;
     left: 210px;
-    max-width: 50%;
+    max-width: 630px;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -73,27 +80,27 @@ body{
     padding-left: 4%;
 }
 
-.eg-hero-content h1{
+.eg-hero-content h2{
     color: #ffffff;
     font-size: 36px;
     text-transform: uppercase;
     
 }
 
-.eg-hero-content h1 span{
+.eg-hero-content h2 span{
     font-weight: 100;  
 }
 
 .eg-hero-content p{
-    font-size: 22px;
+    font-size: 18px;
     line-height: 30px;
     color: #ffffff;
-    /* font-weight: 400; */
+    font-weight: 300;
+    margin-right: 97px;
 }
 
 .eg-hero-content p span{
-    font-weight: 700;
-    
+    font-weight: 700; 
 }
 
 .eg-heroBtn{
@@ -103,23 +110,246 @@ body{
 }
 
 .eg-heroBtn .eg-btnPrimary{
+    font-weight: 700;
     padding: 15px 20px;
     background-color: #FCC607;
     border-radius: 2px;
     border: none;
     cursor: pointer;
+    box-shadow: 0 0 25px 0 rgba(255, 255, 255, 0.15);
+    transition: all 0.3s ease-in-out;
 }
+
+.eg-heroBtn .eg-btnPrimary:hover{
+    background-color: #f9de7f;
+}
+
 .eg-heroBtn .eg-btnSecondary{
+    font-weight: 700;
     padding: 15px 20px;
     background: transparent;
     color: #ffffff;
     border: 1px solid #ffffff80;
     border-radius: 2px;
     cursor: pointer;
+    box-shadow: 0 0 25px 0 rgba(255, 255, 255, 0.15);
+    transition: all 0.3s ease-in-out;
+}
+
+.eg-heroBtn .eg-btnSecondary:hover{
+    background-color: #ffffff;
+    color: #000;
 }
 
 .eg-hero-content .eg-trust{
     display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+/* Our Amenities  */
+.eg-ourAmenities{
+    text-align: center;
+    position: relative;
+    padding-top: 40px;
+}
+
+.eg-ourAmenitiesBG{
+    position: absolute;
+    width: 100%;
+    height: 48%;
+    top: 282px;
+    z-index: -1;
+}
+
+.eg-ourAmenitiesBG img{
+    width: 100%;
+    height: 100%;
+}
+.eg-ourAmenities h2{
+    font-size: 36px;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin: 20px 0;
+}
+
+.eg-ourAmenities h2 span{
+    font-weight: 700;
+}
+
+.eg-ourAmenities .eg-container > p{
+    font-size: 22px;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+
+.eg-ourAmenities .eg-card-wrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.eg-ourAmenities .eg-card-wrapper .eg-row01{
+    display: flex;
+    gap: 12px;
+    flex: 1;
+}
+.eg-ourAmenities .eg-card-wrapper .eg-row02{
+    display: flex;
+    gap: 12px;
+    flex: 1;
+}
+
+.eg-ourAmenities .eg-card-wrapper .eg-card{
+    width: 240px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 50px 0 rgba(0, 0, 0, 0.3);
+    transition: all 0.2s ease-in-out;
+}
+
+.eg-ourAmenities .eg-card-wrapper .eg-card:hover{
+    background-color: #FCC607;
+}
+
+.eg-ourAmenities .eg-card-wrapper .eg-card .eg-BGImage{
+    width: 100%;
+    height: 165px;
+}
+
+.eg-ourAmenities .eg-card-wrapper .eg-row01 .eg-card:nth-of-type(1) .eg-BGImage{
+    background: url(https://i.ibb.co/Hf46rDpq/5a6b8c9ab7b4c2f021ea6f0d4635deacc4fc98d7.png);
+    background-size: 118%;
+    background-position-x: 58%;
+}
+.eg-ourAmenities .eg-card-wrapper .eg-row01 .eg-card:nth-of-type(2) .eg-BGImage{
+    background: url(https://i.ibb.co/PZVKKN0P/ad479e157ea35c7b004fc34d4fb1a4a185ea03a3.png);
+    background-size: cover;
+    background-position: center;
+}
+.eg-ourAmenities .eg-card-wrapper .eg-row01 .eg-card:nth-of-type(3) .eg-BGImage{
+    background: url(https://i.ibb.co/svDKgBgY/517fd996ce8fea5b5f27b99cca01798ecc748393.png);
+    background-size: 126%;
+    background-position: 58% 84%;
+}
+.eg-ourAmenities .eg-card-wrapper .eg-row01 .eg-card:nth-of-type(4) .eg-BGImage{
+    background: url(https://i.ibb.co/Ndkbbjnq/ff12440436e0ceb76e8c670b5503a4206344ca5d.png);
+    background-size: 216%;
+    background-position: center;
+}
+.eg-ourAmenities .eg-card-wrapper .eg-row01 .eg-card:nth-of-type(5) .eg-BGImage{
+    background: url(https://i.ibb.co/KjcmQxnb/2f9f5e9f430cf7b327eae7afe04dee1fc5b985c4.png);
+    background-size: 134%;
+    background-position: 82% 100%;
+}
+
+.eg-ourAmenities .eg-card-wrapper .eg-row02 .eg-card:nth-of-type(1) .eg-BGImage{
+    background: url(https://i.ibb.co/MbjBd2V/dd06c33dd92d32ab4f84fcff0190666e1a197980.png);
+    background-size: cover;
+    background-position: center;
+}
+.eg-ourAmenities .eg-card-wrapper .eg-row02 .eg-card:nth-of-type(2) .eg-BGImage{
+    background: url(https://i.ibb.co/bV0y7y4/82433f0e2c017c21e4cf36eb6e83c3cd31dda320.png);
+    background-size: 110%;
+    background-position: 38% 85%;
+}
+.eg-ourAmenities .eg-card-wrapper .eg-row02 .eg-card:nth-of-type(3) .eg-BGImage{
+    background: url(https://i.ibb.co/NnWMVxgS/aea6683e31ad78ffe1d196b9af06bd6c619c89f5.png);
+    background-size: cover;
+    background-position: 0 2%;
+}
+.eg-ourAmenities .eg-card-wrapper .eg-row02 .eg-card:nth-of-type(4) .eg-BGImage{
+    background: url(https://i.ibb.co/nsYdMKm7/9f5565bdd649890e5c1927c4cc3e603c92587637-1.png);
+    background-size: 208%;
+    background-position: 94% 14%;
+}
+.eg-ourAmenities .eg-card-wrapper .eg-row02 .eg-card:nth-of-type(5) .eg-BGImage{
+    background: url(https://i.ibb.co/sJyprQqb/fcbf4c15ae4b4cd7bd125b8ea270852f956e8f69.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.eg-ourAmenities .eg-card-wrapper .eg-card img{
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    top: 34%;
+    left: 35%;
+}
+
+.eg-ourAmenities .eg-card-wrapper .eg-card .eg-card-content{
+    padding: 0 10px 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.eg-ourAmenities .eg-card-wrapper .eg-row01 .eg-card:nth-of-type(3) .eg-card-content{
+    gap: 25px;
+}
+
+.eg-ourAmenities .eg-card-wrapper .eg-card .eg-card-content h4{
+    margin: 0 10px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.eg-ourAmenities .eg-card-wrapper .eg-card .eg-card-content .eg-btn{
+    padding: 15px 18px;
+    font-weight: 700;
+    cursor: pointer;
+    border: 1px solid #0000004D;
+}
+
+.eg-ourAmenities .eg-cta-container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.eg-ourAmenities .eg-cta-container p{
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.eg-ourAmenities .eg-cta-container .eg-cta-buttons{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.eg-ourAmenities .eg-cta-container .eg-cta-buttons .eg-btn{
+    padding: 15px 20px;
+    border-radius: 2px;
+    font-weight: 600;
+    background-color: #FCC607;
+    border: none;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+}
+
+.eg-ourAmenities .eg-cta-container .eg-cta-buttons .eg-btn:first-of-type:hover{
+    background-color: #f9de7f;
+}
+
+.eg-ourAmenities .eg-cta-container .eg-cta-buttons .eg-btn:last-of-type{
+    background-color: #ffffff;
+    border: 1px solid #00000066;
+    transition: all 0.4s ease-in-out;
+}
+
+.eg-ourAmenities .eg-cta-container .eg-cta-buttons .eg-btn:last-of-type:hover{
+    background-color: #fdedb5;
+}
+
+.eg-ourAmenities .eg-cta-container .eg-trust{
+    display: flex;
+    justify-content: center;
     gap: 10px;
     align-items: center;
 }
